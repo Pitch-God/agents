@@ -4,7 +4,7 @@
  */
 import { StateGraph } from "@langchain/langgraph";
 import { RunnableConfig } from "@langchain/core/runnables";
-import { StateAnnotation } from "./state.js";
+import { StateAnnotation } from "./utils/state.js";
 
 /**
  * Define a node, these do the work of the graph and should have most of the logic.

@@ -1,6 +1,6 @@
 import { BaseMessage, BaseMessageLike } from "@langchain/core/messages";
 import { Annotation, messagesStateReducer } from "@langchain/langgraph";
-import { EmailHistory } from "../types.js";
+import { EmailHistory } from "../types/types.js";
 
 /**
  * A graph's StateAnnotation defines three main things:

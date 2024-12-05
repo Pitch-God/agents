@@ -1,5 +1,5 @@
 import { describe, it, expect } from "@jest/globals";
-import { graph } from "../src/agent/graph.js";
+import { graph } from "../src/index.js";
 
 describe("Graph", () => {
   it("should process input through the graph", async () => {
