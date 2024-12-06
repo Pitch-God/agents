@@ -65,3 +65,34 @@ export const input2= [
     "message_id": "<2d0507e8-34a3-slt90-4f21-868d-ba28b054f567-wwmi4ou@pitchgodbiz.com>"
   }
 ]
+
+
+export const packagemanReply=[
+  {
+    "time": "2024-11-29T20:05:16.236Z",
+    "type": "SENT",
+    "subject": "Re: Saw this review",
+    "stats_id": "b5747496-9997-438f-8409-ce5093e53987",
+    "email_body": "Hi Seaton, Saw that review by Brian McMaster discussing extra shipments causing overdraft issues. Reaching out with you today because we offer same-day delivery and a packaging quality guarantee as a dedicated 3PL partner. On top of that, you get a 15% discount on your shipping bill for the next 4 months. Would it be worth a quick 12-minute chat next week to discuss some of our pricing and rates for your SKUs and talk about this special BF offer? Cheers, Packageman.com P.S. Our top warehouses are in CA and New Jersey. If you’re around, we’d love to hang out.",
+    "message_id": "<b5747496-9997-sl48-438f-8409-ce5093e53987@pitchgodboost.com>",
+    "open_count": 0,
+    "click_count": 0,
+    "click_details": {},
+    "email_seq_number": "1"
+  },
+  {
+    "time": "2024-11-29T20:07:52.000Z",
+    "type": "REPLY",
+    "stats_id": "b5747496-9997-438f-8409-ce5093e53987",
+    "email_body": "Hi Rajesh, Can you please send us a copy of the review you’re referencing? Seaton Collard Owner/Founder CHOQ, LLC www.choq.com 512.636.5002",
+    "message_id": "<B57AD2D9-5A2E-4CE1-ADAB-2A991557A7BA@choq.com>",
+    "email_seq_number": "1"
+  },
+  {
+    "time": "2024-12-04T15:03:17.747+00:00",
+    "type": "SENT",
+    "stats_id": "b5747496-9997-438f-8409-ce5093e53987",
+    "email_body": "Hi Seaton, You can find the review we are referencing here . If you are still facing issues with shipping, would you be open to a quick 15-minute chat next week on how we can resolve them? What time works best for you? Best, Rajesh.",
+    "message_id": "<b5747496-9997-slt41-438f-8409-ce5093e53987-de39ygy@pitchgodboost.com>"
+  }
+]

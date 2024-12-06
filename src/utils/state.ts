@@ -19,33 +19,55 @@ export const StateAnnotation = Annotation.Root({
   }),
 
 
-  emailThread: Annotation<EmailHistory>({
-    reducer: () => ({
-      history: [],
-      from: '',
-      to: ''
-    }),
+  emailThread: Annotation<Array<Record<string, any>>>({
+    reducer: (x,y) => y??x??[],
+  }),
+
+  emailThreadSummary: Annotation<string>({
+    reducer: (x,y) => y??x??'',
   }),
 
   isTranslationRequired: Annotation<boolean>({
-    reducer: () => false,
+    reducer: (x, y) => y ?? x ?? false,
     default: () => false
   }),
 
-  isSchedulingRequired: Annotation<boolean>({
-    reducer: () => false,
-    default: () => false
+  schedule:  Annotation<Record<string, any>>({
+    reducer: (x,y) => y??x??{},
   }),
 
 
 
   isRetrievalRequired: Annotation<boolean>({
-    reducer: () => false,
+    reducer: (x, y) => y ?? x ?? false,
     default: () => false
   }),
 
+  userLocation:  Annotation<string>({
+    reducer: (x,y) => y??x,
+  }),
 
+  userTimeZone:  Annotation<Record<string, any>>({
+    reducer: (x,y) => y??x??{},
+  }),
 
+  isFollowUp: Annotation<boolean>({
+    reducer: (x, y) => y ?? x ?? false,
+    default: () => false  
+  }),
+
+  isReply: Annotation<boolean>({
+    reducer: (x, y) => y ?? x ?? false,
+    default: () => false
+  }),
+
+  retrievedContext: Annotation<Record<string, any>>({
+    reducer: (x,y) => y??x??{},
+  }),
+
+  finalReply: Annotation<Record<string, any>>({
+    reducer: (x,y) => y??x??{},
+  }),
 
 
 
