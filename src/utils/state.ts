@@ -19,28 +19,28 @@ export const StateAnnotation = Annotation.Root({
   }),
 
 
-  emailThread: Annotation<EmailHistory>({
-    reducer: () => ({
-      history: [],
-      from: '',
-      to: ''
-    }),
+  emailThread: Annotation<Array<Record<string, any>>>({
+    reducer: (x,y) => y??x??[],
+  }),
+
+  emailThreadSummary: Annotation<string>({
+    reducer: (x,y) => y??x??'',
   }),
 
   isTranslationRequired: Annotation<boolean>({
-    reducer: () => false,
+    reducer: (x, y) => y ?? x ?? false,
     default: () => false
   }),
 
   isSchedulingRequired: Annotation<boolean>({
-    reducer: () => false,
+    reducer: (x, y) => y ?? x ?? false,
     default: () => false
   }),
 
 
 
   isRetrievalRequired: Annotation<boolean>({
-    reducer: () => false,
+    reducer: (x, y) => y ?? x ?? false,
     default: () => false
   }),
 

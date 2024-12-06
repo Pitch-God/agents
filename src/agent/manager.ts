@@ -2,6 +2,8 @@ import { model } from "../utils/model.js"
 import { RunnableSequence } from "@langchain/core/runnables";
 import { input2,input } from "../examples/reply.js";
 import { prompt, parser } from "../prompts/manager.js";
+import { StateAnnotation } from "../utils/state.js";
+import { RunnableConfig } from "@langchain/core/runnables";
 
 
 const chain=  RunnableSequence.from([
@@ -14,23 +16,44 @@ const chain=  RunnableSequence.from([
 )
 
 
+export const managerNode= async(state: typeof StateAnnotation.State, _config: RunnableConfig) => {
 
 
+    const {emailThread}= state;
 
 
-
-
-const run = async (email_thread: string) => {
-    const result = await chain.invoke({ 
-
-        email_thread:email_thread,
+    const result= await chain.invoke({ 
+        email_thread:JSON.stringify(emailThread),
         format_instructions: parser.getFormatInstructions(),
      });
-    return result;
-};
 
 
 
-run(JSON.stringify(input2)).then((result) => {
-    console.log(result);
-});
+const {isTranslationRequired, isSchedulingRequired, isRetrievalRequired, emailThreadSummary}= result;
+
+return {
+    isTranslationRequired,
+    isSchedulingRequired,
+    isRetrievalRequired,
+    emailThreadSummary,
+    emailThread
+}
+
+}
+
+
+
+// const run = async (email_thread: string) => {
+//     const result = await chain.invoke({ 
+
+//         email_thread:email_thread,
+//         format_instructions: parser.getFormatInstructions(),
+//      });
+//     return result;
+// };
+
+
+
+// run(JSON.stringify(input2)).then((result) => {
+//     console.log(result);
+// });
