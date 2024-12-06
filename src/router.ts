@@ -7,7 +7,7 @@ export const decideToRetrieve = async (state: typeof StateAnnotation.State) => {
 if(state.isRetrievalRequired){
     return "retriever";
 }else{
-    return END;
+    return "compiler";
 }
 
 };

@@ -65,6 +65,9 @@ export const StateAnnotation = Annotation.Root({
     reducer: (x,y) => y??x??{},
   }),
 
+  finalReply: Annotation<Record<string, any>>({
+    reducer: (x,y) => y??x??{},
+  }),
 
 
 
