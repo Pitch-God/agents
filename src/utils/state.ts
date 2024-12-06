@@ -51,6 +51,19 @@ export const StateAnnotation = Annotation.Root({
     reducer: (x,y) => y??x??{},
   }),
 
+  isFollowUp: Annotation<boolean>({
+    reducer: (x, y) => y ?? x ?? false,
+    default: () => false  
+  }),
+
+  isReply: Annotation<boolean>({
+    reducer: (x, y) => y ?? x ?? false,
+    default: () => false
+  }),
+
+  retrievedContext: Annotation<Record<string, any>>({
+    reducer: (x,y) => y??x??{},
+  }),
 
 
 

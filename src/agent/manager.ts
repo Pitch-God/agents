@@ -1,6 +1,6 @@
 import { model } from "../utils/model.js"
 import { RunnableSequence } from "@langchain/core/runnables";
-import { input2,input } from "../examples/reply.js";
+import { input2,input,packagemanReply } from "../examples/reply.js";
 import { prompt, parser } from "../prompts/manager.js";
 import { StateAnnotation } from "../utils/state.js";
 import { RunnableConfig } from "@langchain/core/runnables";
@@ -21,6 +21,10 @@ export const managerNode= async(state: typeof StateAnnotation.State, _config: Ru
 
     const {emailThread,userLocation}= state;
 
+    const isReply= emailThread[emailThread.length-1].type==="REPLY";
+
+    const isFollowUp= !isReply
+
 
     const result= await chain.invoke({ 
         email_thread:JSON.stringify(emailThread),
@@ -37,8 +41,9 @@ return {
     schedule,
     isRetrievalRequired,
     emailThreadSummary,
-    emailThread,
-    userTimeZone
+    userTimeZone,
+    isReply,
+    isFollowUp
 }
 
 }
@@ -57,6 +62,6 @@ const run = async (email_thread: string) => {
 
 
 
-run(JSON.stringify(input2)).then((result) => {
+run(JSON.stringify(packagemanReply)).then((result) => {
     console.log(result);
 });

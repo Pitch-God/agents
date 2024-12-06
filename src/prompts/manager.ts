@@ -75,17 +75,6 @@ export const parser = StructuredOutputParser.fromZodSchema(
         userLocation: z
         .string()
         .describe("The location of the recipient"),
-        emailHistory: z.array(
-            z.object({
-                type: z.string(),
-                message_id: z.string(),
-                time: z.string(),
-                email_body: z.string(),
-                subject: z.string(),
-                email_seq_number: z.string(),
-        
-            })
-        ),
     })
 );
 
