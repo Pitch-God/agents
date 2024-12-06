@@ -32,9 +32,8 @@ export const StateAnnotation = Annotation.Root({
     default: () => false
   }),
 
-  isSchedulingRequired: Annotation<boolean>({
-    reducer: (x, y) => y ?? x ?? false,
-    default: () => false
+  schedule:  Annotation<Record<string, any>>({
+    reducer: (x,y) => y??x??{},
   }),
 
 
@@ -44,6 +43,13 @@ export const StateAnnotation = Annotation.Root({
     default: () => false
   }),
 
+  userLocation:  Annotation<string>({
+    reducer: (x,y) => y??x,
+  }),
+
+  userTimeZone:  Annotation<Record<string, any>>({
+    reducer: (x,y) => y??x??{},
+  }),
 
 
 

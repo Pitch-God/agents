@@ -19,41 +19,44 @@ const chain=  RunnableSequence.from([
 export const managerNode= async(state: typeof StateAnnotation.State, _config: RunnableConfig) => {
 
 
-    const {emailThread}= state;
+    const {emailThread,userLocation}= state;
 
 
     const result= await chain.invoke({ 
         email_thread:JSON.stringify(emailThread),
         format_instructions: parser.getFormatInstructions(),
+        user_location:userLocation
      });
 
 
 
-const {isTranslationRequired, isSchedulingRequired, isRetrievalRequired, emailThreadSummary}= result;
+const {isTranslationRequired, schedule, isRetrievalRequired, emailThreadSummary,userTimeZone}= result;
 
 return {
     isTranslationRequired,
-    isSchedulingRequired,
+    schedule,
     isRetrievalRequired,
     emailThreadSummary,
-    emailThread
+    emailThread,
+    userTimeZone
 }
 
 }
 
 
 
-// const run = async (email_thread: string) => {
-//     const result = await chain.invoke({ 
+const run = async (email_thread: string) => {
+    const result = await chain.invoke({ 
 
-//         email_thread:email_thread,
-//         format_instructions: parser.getFormatInstructions(),
-//      });
-//     return result;
-// };
+        email_thread:email_thread,
+        format_instructions: parser.getFormatInstructions(),
+        user_location:"Budapest, Hungary"
+     });
+    return result;
+};
 
 
 
-// run(JSON.stringify(input2)).then((result) => {
-//     console.log(result);
-// });
+run(JSON.stringify(input2)).then((result) => {
+    console.log(result);
+});
