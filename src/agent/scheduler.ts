@@ -1,13 +1,26 @@
 import { model } from "../utils/model.js"
 import { RunnableSequence } from "@langchain/core/runnables";
-import { input } from "../examples/reply.js";
-import { packageman } from "../examples/packageman.js";
-import { prompt, parser } from "../prompts/retriever.js";
-import { tool } from "@langchain/core/tools";
-import axios from "axios";
+import "dotenv/config";
+import { suggestMeetingPrompt, parser } from "../prompts/scheduler.js";
+import { scheduleTools } from "../tools/index.js";
 
 
 
+const chain=  RunnableSequence.from([
+  suggestMeetingPrompt,
+  model.bindTools(scheduleTools),
+
+])
+
+const result = await chain.invoke({
+  email_sent_date: "2024-12-08T10:12:03.409Z",
+  location:"Budapest, Hungary",
+  return_timezone:"IST",
+  format_instructions: parser.getFormatInstructions(),
+})
+
+
+console.log(result)
 
 // this has access to the calendly tools
 
@@ -15,27 +28,3 @@ import axios from "axios";
 
 
 // Can check all the available time slots on the booking calendar
-
-
-const scheduleTool= tool(async({})=>{
-
-const availableTimeSlots= await axios.get("https://api.calendly.com/scheduler/available_time_slots",{
-    headers: {
-        "Authorization": "Bearer YOUR_TOKEN"
-      }
-})
-
-
-},
-
-{
-name:"scheduleTool",
-description:"Call to get the available time slots from the Calendly calendar",
-
-
-
-
-})
-
-
-

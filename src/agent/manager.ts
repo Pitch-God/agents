@@ -34,14 +34,13 @@ export const managerNode= async(state: typeof StateAnnotation.State, _config: Ru
 
 
 
-const {isTranslationRequired, schedule, isRetrievalRequired, emailThreadSummary,userTimeZone}= result;
+const {isTranslationRequired, schedule, isRetrievalRequired, emailThreadSummary}= result;
 
 return {
     isTranslationRequired,
     schedule,
     isRetrievalRequired,
     emailThreadSummary,
-    userTimeZone,
     isReply,
     isFollowUp
 }
