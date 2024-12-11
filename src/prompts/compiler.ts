@@ -15,7 +15,7 @@ export const parser = StructuredOutputParser.fromZodSchema(
 
 
     export const replyPrompt = PromptTemplate.fromTemplate(`
-        You are tasked with creating concise, semi-formal email replies that get straight to the recipient point while maintaining professionalism.
+        You are tasked with creating concise, semi-formal email replies that get straight to the recipient point while maintaining professionalism and also suggest a time slot for a meeting if given in the slots <slots> {slots} </slots>
         
         Review the email thread:
         <email_thread>
@@ -48,7 +48,8 @@ export const parser = StructuredOutputParser.fromZodSchema(
 
 
     export const followUpPrompt = PromptTemplate.fromTemplate(`
-        You are tasked with creating a gentle follow-up email after not receiving a response to a previous email.
+        You are tasked with creating a gentle follow-up email after not receiving a response to a previous email and also suggest a time slot for a meeting if given in the slots <slots> {slots} </slots>
+        
         
         Review the original email thread:
         <email_thread>

@@ -9,7 +9,7 @@ import { RunnableConfig } from "@langchain/core/runnables";
 
 
 export const compilerNode = async (state: typeof StateAnnotation.State, _config: RunnableConfig) => {
-    const {emailThread}= state; 
+    const {emailThread,slots}= state; 
 
     const replyDetails: Record<string, string > = {}
 
@@ -40,6 +40,7 @@ if(state.isRetrievalRequired){
         email_thread:JSON.stringify(emailThread),
         reply_details:JSON.stringify(replyDetails),
         format_instructions: parser.getFormatInstructions(),
+        slots:JSON.stringify(slots)
      });
 
 

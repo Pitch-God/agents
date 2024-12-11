@@ -49,18 +49,18 @@ return {
 
 
 
-const run = async (email_thread: string) => {
-    const result = await chain.invoke({ 
+// const run = async (email_thread: string) => {
+//     const result = await chain.invoke({ 
 
-        email_thread:email_thread,
-        format_instructions: parser.getFormatInstructions(),
-        user_location:"Budapest, Hungary"
-     });
-    return result;
-};
+//         email_thread:email_thread,
+//         format_instructions: parser.getFormatInstructions(),
+//         user_location:"Budapest, Hungary"
+//      });
+//     return result;
+// };
 
 
 
-run(JSON.stringify(packagemanReply)).then((result) => {
-    console.log(result);
-});
+// run(JSON.stringify(packagemanReply)).then((result) => {
+//     console.log(result);
+// });
