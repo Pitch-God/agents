@@ -73,6 +73,10 @@ export const StateAnnotation = Annotation.Root({
     reducer: (x,y) => y??x??"",
   }),
 
+  slots:Annotation<Record<string, any>>({
+    reducer: (x,y) => y??x??{},
+  }),
+
 
   })
 

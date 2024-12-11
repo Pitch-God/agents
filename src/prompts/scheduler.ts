@@ -3,19 +3,18 @@ import { StructuredOutputParser } from "@langchain/core/output_parsers";
 import { nullable, z } from "zod";
 
 
-
-
 export const parser = StructuredOutputParser.fromZodSchema(
-    z
-        .array(
+    z.object({
+        slots: z.array(
             z.object({
-                start_time: z.string().describe("The start time of the meeting"),
-                end_time: z.string().describe("The end time of the meeting"),
+                date: z.string().describe("The date of the meeting"),
+                time: z.string().describe("The local time of the meeting in the user's timezone"),
+                start_time: z.string().describe("The start time of the meeting in ISO format"),
+                end_time: z.string().describe("The end time of the meeting in ISO format")
             })
-        )
-        .describe("The available time slots for a meeting"),
-    )
-
+        ).length(2).describe("Two suggested time slots for the meeting"),
+    })
+);
 
 
 
