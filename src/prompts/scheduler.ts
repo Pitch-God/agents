@@ -16,6 +16,13 @@ export const parser = StructuredOutputParser.fromZodSchema(
         .describe("The available time slots for a meeting"),
     )
 
+
+
+
+
+
+    
+
 export const suggestMeetingPrompt = PromptTemplate.fromTemplate(`
 You are a scheduler that helps schedule meetings and has access to the calendly tools to get the available time slots based on the users location and time slots. You will be provided with the email sent date, location and return timezone. Your job is to find the best time slot for a meeting. And return just two time slots at max.
 
