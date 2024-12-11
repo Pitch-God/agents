@@ -29,7 +29,7 @@ const builder = new StateGraph(StateAnnotation)
 const checkPoint= new MemorySaver()
 
 export const graph = builder.compile({checkpointer:checkPoint});
-const checkpointConfig = { configurable: { thread_id: "1" } };
+export const checkpointConfig = { configurable: { thread_id: "1" } };
 
 // const result = await graph.invoke({ emailThread:JSON.stringify(packagemanReply) ,userLocation:"New Jersey",emailSentDate:"2024-12-09T14:43:06.599Z"},checkpointConfig);
 // console.log(result);
