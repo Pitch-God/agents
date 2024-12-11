@@ -36,22 +36,22 @@ export const retrieverNode= async(state: typeof StateAnnotation.State, _config: 
 
 
 
-export const run = async (email_thread: string,knowledge_base:string) => {
+// export const run = async (email_thread: string,knowledge_base:string) => {
 
 
 
-    const result = await chain.invoke({ 
-        email_thread:email_thread,
-        knowledge_base:knowledge_base,
-        format_instructions: parser.getFormatInstructions(),
-     });
-    return result;
-};
+//     const result = await chain.invoke({ 
+//         email_thread:email_thread,
+//         knowledge_base:knowledge_base,
+//         format_instructions: parser.getFormatInstructions(),
+//      });
+//     return result;
+// };
 
 
-run(JSON.stringify(packagemanReply  ), JSON.stringify(packageman)).then((result) => {
-    console.log(result);
-});
+// run(JSON.stringify(packagemanReply  ), JSON.stringify(packageman)).then((result) => {
+//     console.log(result);
+// });
 
 
 

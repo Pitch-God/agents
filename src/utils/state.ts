@@ -69,6 +69,13 @@ export const StateAnnotation = Annotation.Root({
     reducer: (x,y) => y??x??{},
   }),
 
+  emailSentDate: Annotation<string>({
+    reducer: (x,y) => y??x??"",
+  }),
+
+  slots:Annotation<Record<string, any>>({
+    reducer: (x,y) => y??x??{},
+  }),
 
 
   })
