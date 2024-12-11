@@ -27,9 +27,8 @@ export const StateAnnotation = Annotation.Root({
     reducer: (x,y) => y??x??'',
   }),
 
-  isTranslationRequired: Annotation<boolean>({
-    reducer: (x, y) => y ?? x ?? false,
-    default: () => false
+  isTranslationRequired: Annotation<Record<string, any>>({
+    reducer: (x, y) => y ?? x ?? {}
   }),
 
   schedule:  Annotation<Record<string, any>>({
