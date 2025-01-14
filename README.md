@@ -1,4 +1,4 @@
-# LangGraph.js Project
+# Email Reply Agent
 
 This project demonstrates a multi-agent system implemented using [LangGraph.js](https://github.com/langchain-ai/langgraphjs), designed for [LangGraph Studio](https://github.com/langchain-ai/langgraph-studio). The system consists of multiple specialized agents working together to handle automated email campaign responses.
 
