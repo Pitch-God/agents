@@ -12,74 +12,69 @@ import { EmailHistory } from "../types/types.js";
 
 // This is the primary state of your agent, where you can store any information
 export const StateAnnotation = Annotation.Root({
-  
   messages: Annotation<BaseMessage[], BaseMessageLike[]>({
     reducer: messagesStateReducer,
     default: () => [],
   }),
 
+  knowledgeBase: Annotation<string>({
+    reducer: (x, y) => y ?? x ?? "",
+  }),
 
   emailThread: Annotation<Array<Record<string, any>>>({
-    reducer: (x,y) => y??x??[],
+    reducer: (x, y) => y ?? x ?? [],
   }),
 
   emailThreadSummary: Annotation<string>({
-    reducer: (x,y) => y??x??'',
+    reducer: (x, y) => y ?? x ?? "",
   }),
 
   isTranslationRequired: Annotation<Record<string, any>>({
-    reducer: (x, y) => y ?? x ?? {}
+    reducer: (x, y) => y ?? x ?? {},
   }),
 
-  schedule:  Annotation<Record<string, any>>({
-    reducer: (x,y) => y??x??{},
+  schedule: Annotation<Record<string, any>>({
+    reducer: (x, y) => y ?? x ?? {},
   }),
-
-
 
   isRetrievalRequired: Annotation<boolean>({
     reducer: (x, y) => y ?? x ?? false,
-    default: () => false
+    default: () => false,
   }),
 
-  userLocation:  Annotation<string>({
-    reducer: (x,y) => y??x,
+  userLocation: Annotation<string>({
+    reducer: (x, y) => y ?? x,
   }),
 
-  userTimeZone:  Annotation<Record<string, any>>({
-    reducer: (x,y) => y??x??{},
+  userTimeZone: Annotation<Record<string, any>>({
+    reducer: (x, y) => y ?? x ?? {},
   }),
 
   isFollowUp: Annotation<boolean>({
     reducer: (x, y) => y ?? x ?? false,
-    default: () => false  
+    default: () => false,
   }),
 
   isReply: Annotation<boolean>({
     reducer: (x, y) => y ?? x ?? false,
-    default: () => false
+    default: () => false,
   }),
 
   retrievedContext: Annotation<Record<string, any>>({
-    reducer: (x,y) => y??x??{},
+    reducer: (x, y) => y ?? x ?? {},
   }),
 
   finalReply: Annotation<Record<string, any>>({
-    reducer: (x,y) => y??x??{},
+    reducer: (x, y) => y ?? x ?? {},
   }),
 
   emailSentDate: Annotation<string>({
-    reducer: (x,y) => y??x??"",
+    reducer: (x, y) => y ?? x ?? "",
   }),
 
-  slots:Annotation<Record<string, any>>({
-    reducer: (x,y) => y??x??{},
+  slots: Annotation<Record<string, any>>({
+    reducer: (x, y) => y ?? x ?? {},
   }),
+});
 
-
-  })
-
-
-
-
-  // Create a manager node for the graph
+// Create a manager node for the graph
