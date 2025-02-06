@@ -2,52 +2,41 @@ import { PromptTemplate } from "@langchain/core/prompts";
 import { StructuredOutputParser } from "@langchain/core/output_parsers";
 import { z } from "zod";
 
-
-
-
 export const parser = StructuredOutputParser.fromZodSchema(
-    z.object({
-        reply: z.string().describe("The reply to the email thread "),
-        type:z.enum(["reply","followup"]).describe("reply"),
-    }),
-    
-    );
+  z.object({
+    reply: z.string().describe("The reply to the email thread "),
+    type: z.enum(["reply", "followup"]).describe("reply"),
+  }),
+);
 
-
-    export const replyPrompt = PromptTemplate.fromTemplate(`
-        You are tasked with creating concise, semi-formal email replies that get straight to the recipient point while maintaining professionalism and also suggest a time slot for a meeting if given in the slots <slots> {slots} </slots> and respond in <language> {language} </language> language
+export const replyPrompt = PromptTemplate.fromTemplate(`
+        You are tasked with creating a concise, semi-formal response to a client's reply to our previous email. The response should acknowledge their feedback while maintaining professionalism and suggest a time slot for a meeting if provided in the slots <slots> {slots} </slots>. Respond in <language> {language} </language> language.
         
         Review the email thread:
         <email_thread>
         {email_thread}
         </email_thread>
         
-        Consider these reply details:
-        <reply_details>
-        {reply_details}
-        </reply_details>
-        
         Guidelines for your reply:
-        1. Keep the response brief and focused
-        2. Use a friendly but professional tone
-        3. Address key points directly without unnecessary elaboration
-        4. Skip unnecessary pleasantries while remaining polite
-        5. End with a simple, appropriate closing
+        1. Acknowledge the client's response points specifically
+        2. Address any questions or concerns they've raised
+        3. Keep the tone semi-formal 
+        4. Provide clear next steps or confirmations
+        5. End with a concrete action item or confirmation
+        6. Keep the reply short and to the point
         
         Format your reply according to:
         {format_instructions}
         
         Remember:
-        - Be direct but not abrupt
-        - Prioritize clarity and brevity
-        - Maintain a light, professional tone
-        - Only include essential information
-        `)
+        - Reference specific points from their reply
+        - Show appreciation for their response
+        - Be clear about any agreements or decisions
+        - Maintain a professional but warm tone
+        - Confirm any arrangements or next steps discussed
+        `);
 
-
-
-
-    export const followUpPrompt = PromptTemplate.fromTemplate(`
+export const followUpPrompt = PromptTemplate.fromTemplate(`
         You are tasked with creating a gentle follow-up email after not receiving a response to a previous email and also suggest a time slot for a meeting if given in the slots <slots> {slots} </slots> and respond in <language> {language} </language> language
         
         
@@ -77,4 +66,4 @@ export const parser = StructuredOutputParser.fromZodSchema(
         - Don't make them feel guilty about not replying
         - Maintain professionalism while being friendly
         - Leave the door open for them to respond when they can
-        `)
+        `);
