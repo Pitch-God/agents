@@ -1,63 +1,64 @@
-import { replyPrompt,parser,followUpPrompt } from "../prompts/compiler.js";
+import { replyPrompt, parser, followUpPrompt } from "../prompts/compiler.js";
 import { StateAnnotation } from "../utils/state.js";
 import { RunnableSequence } from "@langchain/core/runnables";
-import { model } from "../utils/model.js"
+import { model } from "../utils/model.js";
 import { RunnableConfig } from "@langchain/core/runnables";
+import { readFileSync } from "fs";
+import { fileURLToPath } from "url";
+import { dirname, join } from "path";
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
+const replyStyles = JSON.parse(
+  readFileSync(join(__dirname, "../utils/replyStyles.json"), "utf-8"),
+);
 
+export const compilerNode = async (
+  state: typeof StateAnnotation.State,
+  _config: RunnableConfig,
+) => {
+  const { emailThread, slots, isTranslationRequired } = state;
+  let language = "English";
 
+  if (isTranslationRequired.isTranslationRequired) {
+    language = isTranslationRequired.language;
+  }
 
-export const compilerNode = async (state: typeof StateAnnotation.State, _config: RunnableConfig) => {
-    const {emailThread,slots,isTranslationRequired}= state; 
-    let language= "English"
+  const replyDetails: Record<string, string> = {};
 
-if(isTranslationRequired.isTranslationRequired){
+  if (state.isReply) {
+    replyDetails.type = "reply";
+  } else {
+    replyDetails.type = "followup";
+  }
 
-language= isTranslationRequired.language
+  const chain = RunnableSequence.from([
+    replyDetails.type === "reply" ? replyPrompt : followUpPrompt,
+    model,
+    parser,
+  ]);
 
-}
+  if (state.isRetrievalRequired) {
+    replyDetails.knowledge_base = JSON.stringify(state.retrievedContext);
+  }
 
-    const replyDetails: Record<string, string > = {}
+  const emailCategory = state.emailCategory;
 
-if(state.isReply){
-    replyDetails.type="reply"
-}else{
-    replyDetails.type="followup"
-}
+  const replyStyle = replyStyles[emailCategory];
 
-    const chain=  RunnableSequence.from([
-        replyDetails.type==="reply"?replyPrompt:followUpPrompt,
-        model,
-        parser
-    ])
+  const result = await chain.invoke({
+    email_thread: JSON.stringify(emailThread),
+    reply_details: JSON.stringify(replyDetails),
+    format_instructions: parser.getFormatInstructions(),
+    reply_style: JSON.stringify(replyStyle),
+    slots: JSON.stringify(slots),
+    language: language,
+    email_category: emailCategory,
+  });
 
-
-
-
-if(state.isRetrievalRequired){
-
-   replyDetails.knowledge_base=JSON.stringify(state.retrievedContext)
-}
-
-
-
-
-    const result = await chain.invoke({ 
-        email_thread:JSON.stringify(emailThread),
-        reply_details:JSON.stringify(replyDetails),
-        format_instructions: parser.getFormatInstructions(),
-        slots:JSON.stringify(slots),
-        language:language
-
-     });
-
-
-
-    return {
-        finalReply: result
-    };
-}
-
-
-
+  return {
+    finalReply: result,
+    emailCategory: emailCategory,
+  };
+};

@@ -6,6 +6,9 @@ export const parser = StructuredOutputParser.fromZodSchema(
   z.object({
     reply: z.string().describe("The reply to the email thread "),
     type: z.enum(["reply", "followup"]).describe("reply"),
+    style: z
+      .enum(["reply", "followup"])
+      .describe("the style of the reply or the followup"),
   }),
 );
 
@@ -16,14 +19,14 @@ export const replyPrompt = PromptTemplate.fromTemplate(`
         <email_thread>
         {email_thread}
         </email_thread>
+
+
+        And here is the reply style example:
+        <reply_style>
+        {reply_style}
+        </reply_style>
         
-        Guidelines for your reply:
-        1. Acknowledge the client's response points specifically
-        2. Address any questions or concerns they've raised
-        3. Keep the tone semi-formal 
-        4. Provide clear next steps or confirmations
-        5. End with a concrete action item or confirmation
-        6. Keep the reply short and to the point
+    
         
         Format your reply according to:
         {format_instructions}
@@ -49,13 +52,14 @@ export const followUpPrompt = PromptTemplate.fromTemplate(`
         <reply_details>
         {reply_details}
         </reply_details>
+
+
+          And here is the reply style example:
+        <reply_style>
+        {reply_style}
+        </reply_style>
         
-        Guidelines for your follow-up:
-        1. Open with a friendly acknowledgment of their busy schedule
-        2. Briefly reference the previous email's key points
-        3. Provide a low-pressure reminder of any pending items
-        4. Keep the tone helpful rather than demanding
-        5. Give them an easy way to respond
+     
         
         Format your reply according to:
         {format_instructions}

@@ -1,6 +1,6 @@
 import { BaseMessage, BaseMessageLike } from "@langchain/core/messages";
 import { Annotation, messagesStateReducer } from "@langchain/langgraph";
-import { EmailHistory } from "../types/types.js";
+import { EmailHistory, EmailCategory } from "../types/types.js";
 
 /**
  * A graph's StateAnnotation defines three main things:
@@ -11,10 +11,15 @@ import { EmailHistory } from "../types/types.js";
  */
 
 // This is the primary state of your agent, where you can store any information
+
 export const StateAnnotation = Annotation.Root({
   messages: Annotation<BaseMessage[], BaseMessageLike[]>({
     reducer: messagesStateReducer,
     default: () => [],
+  }),
+
+  emailCategory: Annotation<EmailCategory>({
+    reducer: (x, y) => y ?? x ?? "INTERESTED",
   }),
 
   knowledgeBase: Annotation<string>({
