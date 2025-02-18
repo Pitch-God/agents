@@ -1,0 +1,632 @@
+{
+    "email_styles": {
+        "INTERESTED": {
+            "tone": "professional_conversational",
+            "structure": [
+                "reference_specific_observation",
+                "highlight_outcomes",
+                "clear_call_to_action"
+            ],
+            "key_elements": [
+                "personalization",
+                "results_focus",
+                "next_steps"
+            ],
+            "examples": [
+                {
+                    "thread": [
+                        {
+                            "type": "SENT",
+                            "subject": "Quick question Ram",
+                            "email_body": "Hello Ram , Just saw that SocialHi5 is a beast in Google ads and also read some of your clutch testimonials. Awesome work. We helped a fellow Google ads agency for local US businesses book 12 meetings directly in their calendar resulting in a $65k deal. Do you want to acquire 2-3 new clients for your company and 8-10 booked calls with your dream prospects each month using my AI personalisation strategy? Want to know more details? Send na if you don't wan't to hear any further comms Cheers! Rajesh pitchgod.com"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Adding Manish to follow up since I am traveling. Manish, Can you please work with Rajesh on the next steps? Best Regards, Ramkumar Venkatesan "
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Manish, good to meet you. Happy new years! Thanks for the interest. I am sending you more details via text. The way it works is I identify the businesses that are in similar niches as the ones you got results in. And post that, we use cold outbound and a lot of Artificial Intelligence (personalising messages) to capture interest of your ideal clients. And then we book calls directly in your calendar with the ideal clients who are interested. We use a lot of tools, automations and processes for it and target high volume. (depends on how much you want to scale) I am attaching an AI email campaign for another client that booked us 16 calls last month. This was for a Google ads agency targeting medical spas in the US. I'd love to chat with you on how we can help you book more qualified meetings into your calendar. What time works?"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Hello Rajesh, Great to meet you too and Happy New Year! Hey Manish, great to meet you too, and Happy New Year! Thanks for taking the time to explain your services, I'm interested in learning more. The personalized messaging using AI for cold outreach sounds impactful, especially with booking calls directly into my calendar. That's exactly what I'm looking for! I'd love to chat soon and see how you can help me book more qualified meetings. My schedule is pretty open next week, let me know what times work best for you."
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Can we meet at 5pm today?"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Hello Rajesh, Can we connect by this Friday?"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Sure. Sending you an invite for Friday!"
+                        }
+                    ]
+                },
+                {
+                    "thread": [
+                        {
+                            "type": "SENT",
+                            "subject": "clients like My Little Havana ?",
+                            "email_body": "Hi Martin, Saw you on clutch - great job on getting an average rating of 5. Was browsing a couple reviews and saw that you excelled specially in areas like Pay Per Click having some great results for clients like My Little Havana. I'm thinking we can get you 8-10 potential client meetings similar to where you can deliver additional Pay Per Click services and grow out the biz. Recently helped an agency, Altered Pixel Marketing, book 23 calls using cold outbound leveraging a case study lookalike strategy. Mind if I share a video breaking down how we can get you 7-8 meetings in the next month with clients similar to the ones you have served? best pitchgod.site"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Feel free to share the video. I am interested in seeing what methods you guys use. Regards, Martin Hristov "
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey Martin, Here is the video I recorded just now for you: https://www.loom.com/share/77eddcc937f04c159bd5e33852e691b3 LMK if you have any questions and if you want to chat further. R"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Watched the video yet? LMK if you have any Qs"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey Martin, Watched the loom yet? I can get you 7-8 booked calls in the next month. Does Monday 2pm works for a quick chat? Or pick a time here"
+                        }
+                    ]
+                },
+                {
+                    "thread": [
+                        {
+                            "type": "SENT",
+                            "subject": "clients like The Pink Moon ?",
+                            "email_body": "Hey Hemang, Found you on clutch - great job on getting an average rating of 5. Was browsing a couple reviews and saw that you excelled specially in areas like Pay Per Click having some great results for clients like The Pink Moon. I'm thinking we can get you 8-10 potential client meetings similar to where you can deliver additional Pay Per Click services and grow out the biz. Recently helped an agency, Altered Pixel Marketing, book 23 calls using cold outbound leveraging a case study lookalike strategy. Mind if I share a video breaking down how we can get you 7-8 meetings in the next month with clients similar to the ones you have served? Rajesh Gupta Partnerships-Pitchgod"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Tell me how this works? Sent from my iPad"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hemang, Here is a video I recorded for a Google ads use case to show how this works for another company. Here you go! LMK if you have any Qs"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Thanks for the video, how does your commercials work? Also, what is the process once onboarded? Hemang Rami"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey Hemang, It is a one time setup fee and then a per meeting booked charged for you. No retainers. Per meeting booked that shows up!"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey Hemang, Also, if you'd like to chat here is my cal Rajesh"
+                        }
+                    ]
+                }
+            ]
+        },
+        "MORE INFO": {
+            "tone": "direct_informative",
+            "structure": [
+                "address_specific_query",
+                "brief_explanation",
+                "proof_points",
+                "meeting_transition"
+            ],
+            "key_elements": [
+                "clarity",
+                "expertise_demonstration",
+                "value_proposition"
+            ],
+            "examples": [
+                {
+                    "thread": [
+                        {
+                            "type": "SENT",
+                            "email_body": "Hi Prithvi, , I'd jump straight to the pitch. No BS. As the Founder & CEO of Borneo, increasing demos and building a sales pipeline will be a priority at all times. We recently helped Fieldwire, a construction SaaS company, book 4023+ demos in less than 120 days using targeted Google ads at less than $90/booked demo by hitting the right desires, revenue focused keywords and market sophistication mechanism. Would you be willing to grow your pipeline using targeted revenue focused keywords? Best, alteredpixelmarketing.com Speak to me here"
+                        },
+                        {
+                            "type": "SENT",
+                            "subject": "RE: Quick question",
+                            "email_body": "Hi Prithvi, , We recently helped Fieldwire, a construction SaaS company, book 4023+ demos in less than 120 days using targeted Google ads at less than $90/booked demo by hitting the right desires, revenue focused keywords and market sophistication mechanism. Would you be willing to grow your pipeline using targeted revenue focused keywords? Best, alteredpixelmarketing.com Speak to me here"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Hi Rajesh, Picking up from Prithvi. Can we hop on a call so we can talk specifics? I'm based in PST but happy to stay up or call early, my time. Thanks, Kana ---------- Forwarded message --------- > From: Rajesh Gupta < rajesh@listkitzen.com > > Date: Sat, Jan 13, 2024 at 8:08 AM > Subject: RE: Quick question > To: < prithvi@borneo.io > > > > Hi Prithvi, , > > We recently helped Fieldwire, a construction SaaS company, book 4023+ > demos in less than 120 days using targeted Google ads at less than > $90/booked demo by hitting the right desires, revenue focused keywords and > market sophistication mechanism. > > Would you be willing to grow your pipeline using targeted revenue focused > keywords? > > Best, > > alteredpixelmarketing.com > > Speak to me here > < https://strategy-call.as.me/AlteredPixelDigitalMarketing > > > On Wed, Jan 10, 2024 at 04:11 PM UTC Rajesh Gupta < rajesh@listkitzen.com > > wrote: > >> Hi Prithvi, , >> >> I'd jump straight to the pitch. No BS. >> >> As the Founder & CEO of Borneo, increasing demos and building a sales >> pipeline will be a priority at all times. >> >> We recently helped Fieldwire, a construction SaaS company, book 4023+ >> demos in less than 120 days using targeted Google ads at less than >> $90/booked demo by hitting the right desires, revenue focused keywords and >> market sophistication mechanism. >> >> Would you be willing to grow your pipeline using targeted revenue focused >> keywords? >> >> Best, >> >> alteredpixelmarketing.com >> >> Speak to me here >> < https://strategy-call.as.me/AlteredPixelDigitalMarketing > >> > -- *Kana Mizuoka * Enterprise Account Director kana@borneo.io | www.borneo.io For more information about your rights and how we process your personal data, please see our privacy policy < https://www.borneo.io/privacy/ >."
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Sure Kana, We can chat. I am available in PST timezone too. You can pick a time from the cal here"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey Kana, Can I book 11am PST tomorrow in your cal? I have a slot then. Or you can find a time here. I look forward to speaking to you."
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Hi Rajesh, Sure, feel free to reschedule our current meeting. Thanks, Kana"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey Kana, putting it on cal at 11am PST. Can you let me know your cell phone number that you use?"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "I've sent you an invite Kana. Hope you received it. Talk to you soon."
+                        }
+                    ]
+                },
+                {
+                    "thread": [
+                        {
+                            "type": "SENT",
+                            "subject": " thoughts Steve ?",
+                            "email_body": "Good afternoon Steve, , As the Founder And CEO of Badger Maps, I am making a fair assumption that increasing demos and building a sales pipeline (for your sales closers and self fulfilement) would be a priority at all times. We recently helped Fieldwire, a fellow SaaS company, book 4023+ demos in less than 120 days using targeted Google ads at less than $90/booked demo by hitting the right desires, revenue focused keywords and market sophistication mechanism. It helped them 3X their sales pipeline in less than 120 days. Would you be willing to grow your pipeline using targeted revenue focused keywords? Best, altpixelmarketing(dot)com"
+                        },
+                        {
+                            "type": "SENT",
+                            "subject": "RE:  thoughts Steve ?",
+                            "email_body": "Good morning Steve, , We recently helped Fieldwire, a construction SaaS company, book 4023+ demos in less than 120 days using targeted Google ads at less than $90/booked demo by hitting the right desires, revenue focused keywords and market sophistication mechanism. Mind if I share a case study? Best, altpixelmarketing(dot)com"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Sure, I'll check out a case study. Steve Benson CEO & Founder, Badger Maps LinkedIn | Outside Sales Talk Podcast | Badger Sales University"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey Steve, I am attaching a case study showing the cost per conversion and cost per booked call for the saas company along with conversions in the last year. We use interest based targeting and copywriting to generate leads focused on market research at the forefront. Extensive market research and unique copy approach makes us stand out and target user intent for different awareness levels. My colleague Cam who heads this department has some time tomorrow or Monday afternoon for a quick chat. Post 1pm EST. Let me know if that works and I will send you an invite to sync on ways to help you."
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Steve, I shared the case study and info on the campaign a while ago. Cam, who heads this department, has some time Monday afternoon to have a quick sync up with you to share his insights on the campaign and understand more on how to help you. Do you have sometime afternoon Monday? Best after 1pm. Or you can also pick a time here if that's easier.. Cheers"
+                        }
+                    ]
+                },
+                {
+                    "thread": [
+                        {
+                            "type": "SENT",
+                            "subject": "Google Ad ROI]",
+                            "email_body": "Good day Howard , Noticed you have some Google Ads running right now and are operating in the commercial roofs space. Is your return on that spend at least 3x? Reaching out because we helped Mia Aesthetics add an additional 3.5m last year at a return of 4+ Would you like me to share more info on the 4x ROAS campaign we crafted for them? Best, ."
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Sure. Email it to me and I'll send it to our marketing director. Regards, Howard Good day Howard , Noticed you have some Google Ads running right now and are operating in the commercial roofs space. Is your return on that spend at least 3x? Reaching out because we helped Mia Aesthetics add an additional 3.5m last year at a return of 4+ Would you like me to share more info on the 4x ROAS campaign we crafted for them? Best, ."
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey Howard, Sure I am attaching the case study I mentioned This is very very similar to what you guys do. Can you loop in your marketing director too? I'd love to have a no-obligation chat to provide value and see if we can potentially work together. Here is my cal Friday afternoon or Monday early works best for me. Talk soon!"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Thanks. I sent it to her. Regards, Howard"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Awesome! Talk soon Howard."
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Howard, Did you guys have a look at the case study? I am attaching a complete deck of all the clients we have worked with and the kind of outsized returns we got them! You can send this too! I am available tomorrow at 2pm for a quick chat or Thursday 4pm. Also have a few times here Let's take your company to the next level. We are at least talking 2-3m here in the next year. Talk soon!"
+                        }
+                    ]
+                }
+            ]
+        },
+        "MEETING": {
+            "tone": "efficient_friendly",
+            "structure": [
+                "quick_confirmation",
+                "mention_decision_makers",
+                "next_steps",
+                "scheduling_flexibility"
+            ],
+            "key_elements": [
+                "time_specificity",
+                "clear_logistics",
+                "follow_through"
+            ],
+            "examples": [
+                {
+                    "thread": [
+                        {
+                            "type": "SENT",
+                            "subject": "Quick question",
+                            "email_body": "Hi Melanie, Happy Tuesday! , Was reading a bunch of reviews about people speaking highly of Harmony Aesthetics Center's services in the medical practice space. Recently helped a med spa owner, Mia Aesthetics, that specialises in cosmetic surgery, generate a revenue of $3.6m in a year from our expert google ads domination methodology that dropped his cost per customer to less than $5.4. Mind if I send you that case study?"
+                        },
+                        {
+                            "type": "SENT",
+                            "subject": "RE: Quick question",
+                            "email_body": "Melanie - the reason I reached out to you the other day was because we helped a similar medical practice owner like you book 10+ appointments every week at scale at less than $23/appointment and generate a revenue of $3.6m in a year at a healthy roas of 9+. Want to achieve similar results like this?"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "I would be interested in hearing more about what you offer. -- Melanie Abeyta "
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "The way it works is we focus on high converting keywords using google ads. We branch out the ads across all the locations you are present in. The objective is to help you onboard new customers for all your locations. We helped Mia Aesthetics scale 200+ locations. If this is of interest, I'd love to know more about your business and ofc bring you new customers. Let me know if this sounds like something you'd want to chat about and let's chAT."
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Since we are the top 3% of google ads partners across globe and the specialty lies in scaling practices like yours, you will be a great fit to take benefit of our offering."
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Yes, let's set up a time to chat, please. I am available in the mornings before 10 am PST, and on Wednesdays most of the day. Thank you, Melanie"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Booked for 9:30am PST tomorrow. Talk to you soon. Hope you got the invite. Cheers, Cam"
+                        }
+                    ]
+                },
+                {
+                    "thread": [
+                        {
+                            "type": "SENT",
+                            "subject": " Alec, meet Proactivehealth AI Agent ",
+                            "email_body": "Hi Alec, We are hosting a workshop in the upcoming month that will teach you how to implement AI within 2-3 weeks at minimal cost, while ensuring maximum security and efficiency. Our past workshops have provided valuable, actionable insights to professionals across various sectors from companies like Rising 8, Rising Cloud, Freshly, etc. Post-Webinar Perks: 60-minute AI Analysis : Delve deep into your tech stack and data, and receive a complimentary roadmap. Free AI Demo: Experience our capabilities firsthand with a demo customized using your data. Can I send over a 2 min video overview of what the AI workshop covers and what you can expect from the AI roadmap? Regards, Bob Tavus Sonatafy"
+                        },
+                        {
+                            "type": "SENT",
+                            "subject": "RE:  Alec, meet Proactivehealth AI Agent ",
+                            "email_body": "Hi Alec, This workshop will also demonstrate how AI can streamline your operations, notably through: Reducing clinical errors and enhancing patient care. Simplifying complex data analysis for better decision-making. Offering scalable AI solutions customized for your specific needs. Mind if I share an invite?"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "This sounds interesting. Please share the invite. Best, -- - Alec Confidentiality Notice: This email and any attachments are intended solely for the use of the named addressee(s) and may contain confidential and/or privileged information. Any unauthorized review, use, disclosure, or distribution is prohibited. If you are not the intended recipient, please contact the sender by reply email and destroy all copies of the original message. If you have received this email in error, please notify the sender immediately and delete this email from your system. Thank you for your cooperation."
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey Alec, Sure thing - we can set up a workshop for you and the Proactive Health team next Monday - how about either 215 or 240 MDT? Could also do Wed 230 MDT. Let me know your preference! Looking forward to discussing AI with you. Bob"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Thanks Bob. It will be just me to start with. Do you have any availability on this or next Thursday morning?"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey Alec, Sure do - we could do 8-11 PST, then 12, 2 or 3 PST. Let me know and I'll get it sent over! Bob"
+                        }
+                    ]
+                },
+                {
+                    "thread": [
+                        {
+                            "type": "SENT",
+                            "subject": "Google Ads ROI for Felix",
+                            "email_body": "Good afternoon, Felix. I observed your company hasn't adopted Google Ads yet. A client of ours had been in business for over three decades and had never used Google ads. We generated them almost 100 leads in Commercial, Package design, and digital printing in Q1. One million dollars in pipeline, 65k already secured. Would you like me to share more info on the 4x ROAS campaign we crafted for them? Cheers, Lexi The Social Rook PS: If this isn't relevant to you, please let me know"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Google Ads ROI for Felix Hi Lexi, Thank you for your email. I actually already have Google Ads and my monthly spend is around $800 which is generating me more than $8000. However, I need to get even more sales and would like to discuss what you have to offer. Felix Good afternoon, Felix. I observed your company hasn't adopted Google Ads yet. A client of ours had been in business for over three decades and had never used Google ads. We generated them almost 100 leads in Commercial, Package design, and digital printing in Q1. One million dollars in pipeline, 65k already secured. Would you like me to share more info on the 4x ROAS campaign we crafted for them? Cheers, Lexi The Social Rook PS: If this isn't relevant to you, please let me know"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Sounds great Felix! Want to set up some time to chat tomorrow afternoon or maybe Monday? Let me know. Lexi"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey Felix, Dropping in here again - want to go through some campaign ideas later on this week? Lexi"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Hi Lexi, Sorry for not replying earlier. Tomorrow or Friday will work for me. How about 11:00am? Felix"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Sounds great! I just had Giovani - our founder - send you an invite for Friday at 11. Looking forward to the conversation! Lexi"
+                        }
+                    ]
+                }
+            ]
+        },
+        "CASE STUDY": {
+            "tone": "factual_engaging",
+            "structure": [
+                "context_setting",
+                "results_focus",
+                "relevance_demonstration",
+                "action_step"
+            ],
+            "key_elements": [
+                "specific_metrics",
+                "industry_relevance",
+                "progression"
+            ],
+            "examples": [
+                {
+                    "thread": [
+                        {
+                            "type": "SENT",
+                            "subject": "Quick question",
+                            "email_body": "Hello Neil , I was reading a host of testimonials about people talking highly of Midwest Digestive Health and Nutrition's services in the medical practice space. We recently helped a medical practice owner Mia Aesthetics book 10+ appointments every day at less than $23/booked appointment that generated him $3.6m of yearly revenue using our google ads pain point capture mechanism that targets people already looking for medical services. Mind if I share a case study? Best, alteredpixelmarketing.com Speak to me here Reply \"noc\" and I will remove you from any communication"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Im willing to see some case studies of your firms work Thanks Neil"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Sure Neil, Happy New Years! I am attaching a case study of the client I mentioned. The client is a Med Spa owner Mia Aesthetics. We helped them generate a revenue of $3.6m using hyper targeted google and fb ads. Here is the case study we put together for you of the work done: I would love to chat on how we can help your company achieve similar and better results. Monday's work best for me. Alternatively, you can pick a time here and let's get some killer results for you. Speak soon, Cam"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Neil, You were interested in scaling your practice and I sent you a case study on how we helped a similar practice like yours. My team and I are gearing up to on board one new practice to scale. Here is the case study again for reference: I'd love to chat for 15 mins to understand your practice and prepare a custom scaling plan for you. Pick a time here as per your convenience or let me know what time works and I will check my cal. Talk soon"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey Neil, Before the new year you wanted to scale your company using Google ads and I shared some case studies on how we scaled multiple companies beyond $3m+ in a year. I'd love to chat more for 15 mins on how we can add value and scale your company. Here is my cal. Thursdays work best for me but you can choose as per your convinence. Talk soon."
+                        }
+                    ]
+                },
+                {
+                    "thread": [
+                        {
+                            "type": "SENT",
+                            "subject": "17 domain issues Jerry",
+                            "email_body": "Hey Jerry , Wondering if you are aware you have 17 optimization issues on Elm Wealth's website? In particular, I noticed that The webpage has \"img\" tags with empty/missing \"alt\" attributes. Fix by adding descriptive \"alt\" text to each \"img\" tag.. Mind if I send over a quick loom highlighting the other 16 issues I noticed? Best regards, Bob Partnerships-Thomas Digital PS For context, I\u2019ve fixed over 100 other wealth managementwebsites; Elm Wealth popped up on my radar, so I figured I\u2019d reach out with a quick initial audit."
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Sure please send it over Jerry Bell Partner, Elm Wealth"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey Jerry, My colleague Bob recorded this one for you just now: https://www.loom.com/share/3ac800de167446898807763d11456e33?sid=d756e7a0-9147-4d72-ade5-1043936e0fb5 Like he said in the video, if you want to dive into all of these optimization angles and get some ideas on ranking improvement and other tweaks for Elm's site, let me know and we can set up 15-20 sometime. Thanks, Victor"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Hi Victor, I'd be interested in discussing. The loom was super helpful and validates a lot of what I already kind of suspected. We aren't looking for an overhaul of our website design per se but I am very interested in how we can tweak at the margins to improve across SEO and lead capture for people who are visiting our website. Another big question is how to get our content ranking better. We regularly publish on our blog but I highly doubt it's getting any relevant traffic outside of the database marketing we do. Any chance you can talk tomorrow? If not then, I'm out of town for a bit so we can look at end of the month / early August. Jerry"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey Jerry, Sounds like a plan! I'm swamped up today, so let's connect when you get back from your trip. How about the 30th? 1 or 2 PM? LMK and I'll send an invite."
+                        }
+                    ]
+                },
+                {
+                    "thread": [
+                        {
+                            "type": "SENT",
+                            "subject": "Adidas & McLaren?",
+                            "email_body": "Good morning Ernest, Realize you are offering PPC as a service, but I was curious if you would benefit from white labelling some of your clients like Adidas & McLaren to us to reduce ops burden from your head. We work with agencies like yours to offer PPC - completely white-labeled. Typical results are at least 4x ROAS. Make sense to send over some more info? Thanks, Peter Delle, Lavie"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Send info please. RUNWAY INFLUENCE"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey Ernest, We've managed several millions in ad spend for our white labeled agency partners; best info I can give you is our impact. Digital Mavericks is a great example - we took over their ad campaigns, saw a 93% conversion increase in month 1, with a 2-3x total increase once we were fully dialed in. They scaled their top promotions to over $500,000 in monthly spend while maintaining KPI targets. Worth a quick chat next week? Got some ideas for Runway Influence, but want to hear what you already have cooking. Peter"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Send me examples / case studies please. RUNWAY INFLUENCE"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Good morning, Gladly. Thanks for asking. On our homepage, you can view a walkthrough of a new account's first 30-day ROAS impact. https://www.lavie.agency/ Peter Delle"
+                        }
+                    ]
+                }
+            ]
+        },
+        "OBJECTION": {
+            "tone": "understanding_solution_focused",
+            "structure": [
+                "acknowledge_concern",
+                "present_solution",
+                "provide_proof",
+                "maintain_momentum"
+            ],
+            "key_elements": [
+                "empathy",
+                "problem_solving",
+                "confidence"
+            ],
+            "examples": [
+                {
+                    "thread": [
+                        {
+                            "type": "SENT",
+                            "subject": "clients like Fairdeal Realtors Pvt Ltd ?",
+                            "email_body": "Hi Ernest, Saw you on clutch - great job on getting an average rating of 5. Was browsing a couple reviews and saw that you excelled specially in areas like Social Media Marketing having some great results for clients like Fairdeal Realtors Pvt Ltd. I'm thinking we can get you 8-10 potential client meetings similar to where you can deliver additional Social Media Marketing services and grow out the biz. Recently helped an agency, Altered Pixel Marketing, book 23 calls using cold outbound leveraging a case study lookalike strategy. Mind if I share a video breaking down how we can get you 7-8 meetings in the next month with clients similar to the ones you have served? Michael Johnson Partnerships-Pitchgod"
+                        },
+                        {
+                            "type": "SENT",
+                            "subject": "RE: clients like Fairdeal Realtors Pvt Ltd ?",
+                            "email_body": "Hi Ernest, I'm thinking we can get you 8-10 potential client meetings similar to where you can deliver additional Social Media Marketing services and grow out the biz. Mind if I share a video breaking down how we can get you 7-8 meetings in the next month with clients similar to the ones you have served using a case study lookalike strategy? Michael Johnson Partnerships-Pitchgod"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Sure, but mind you we only do commission based sales ;) RUNWAY INFLUENCE"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Commission based sales has burned a hole in my pocket as my team and I suffer if your team fails to close out deals or sometimes there's a false reporting. We charge based on qualified leads who book a call with you. Depends how many you and your sales team close. Influencer marketing can really crush. So it's a one time setup (that covers all the costs) and then a pay per meeting booked basis. Totally understand if that's not in your radar but I've been burnt in the past and that's a variable that I don't control. SO I get it. LMK if you're still interested or not a problem"
+                        }
+                    ]
+                },
+                {
+                    "thread": [
+                        {
+                            "type": "SENT",
+                            "subject": "unlimited edits Adrian?",
+                            "email_body": "Hi Adrian, Saw you on clutch - great job on getting an average rating of 5. Was reading a couple reviews and saw that you excelled specially in areas like Content Marketing having worked for clients like Natural Supplements Company. Would you be interested in a free 30 second clip edited to suit format of reels/shorts on IG,YT etc? This can increase your organic presence and get inbounds. P.S. Our team of 10+ editors can deliver unlimited edits and revisions to you in a subscription model. Ryan Sinha Magik Edtis"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Sure Adrian Newman"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey Adrian, I am attaching a sample video edited for your company Numero Web LMK if you like the edit. Also, would love to chat regarding our unlimited edits plan Does tom after work post 12pm? Ryan"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Unfortunately it doesn't. Tell me about your pricing. Adrian Newman"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Adrian, also if you'd like to chat further here Is my cal"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey Adrian, I am attaching the pricing deck. Also, attaching my booking link . You can pick a time as per your availability. Ryan"
+                        }
+                    ]
+                },
+                {
+                    "thread": [
+                        {
+                            "type": "SENT",
+                            "subject": "Luxury at scale",
+                            "email_body": "Hey Sara, Saw that you at Sara Shala Design run a luxury brand. I am reaching out to you as we helped Tiffany, a related luxury brand in the jewelry domain, create an additional 5.3m in revenue at a ROAS of 44.43 using targeted Facebook and Tiktok ads and an AI Chatbot system. Mind if I share more information on how we can help you achieve similar results? Bob Smith Partnerships- The Social Rook P.S I am persistent but hate knocking the wrong doors so if not interested send me an \"NA\" and I won't reach out to you!"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Hi Bob, sure. Also I would like to speak to Tiffany team regarding this. It is part of the policy before we start a relationship with a company. It it comes to that will you be willing to connect us to them? Thanks"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Sara Absolutely - would love to connect you with our POCs over there if/when it made sense to make that happen. Let's sync up and go through the details of that recent Tiffany campaign, and of course hear about your ad experience at Sara Shala Design. This week is shot for us but next Tues or Wed afternoon EST would work for 30. I'll loop in our founder as well. Let me know and I'll get us synced up on the calendar. Thanks Sara, Bob"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey Sara, Re: that Tiffany's play I mentioned, some high level stats are at the top of our case study page here: https://thesocialrook.com/case-studies/ Like I mentioned, we can walk you through the playbook on a call if you've got some time this week. Afternoons are best. LMK! Bob"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Please show me the exact Tiffany campaign so I can forward to my team. Thanks"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey Sara, Are you wanting the creative? Or the final report from that campaign? Both? Bob"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Why wouldn't you send everything you have instead of going back-and-forth like this. At this point we are not interested because I already do not like your style of working. Please remove us from your mailing list. Thank you."
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "No problem Sara, have a great day. Bob"
+                        }
+                    ]
+                }
+            ]
+        },
+        "MECHANISM": {
+            "tone": "clear_technical",
+            "structure": [
+                "simple_breakdown",
+                "value_focus",
+                "context_relevance",
+                "forward_direction"
+            ],
+            "key_elements": [
+                "clarity",
+                "expertise",
+                "actionability"
+            ],
+            "examples": [
+                {
+                    "thread": [
+                        {
+                            "type": "SENT",
+                            "subject": "reduced shipping",
+                            "email_body": "Hi Carlos, Notice that you're manufacturing SV2 Printer at Botfactory. I think I could cut about 15% off your shipping rates by letting you leverage contracts I have with UPS, USPS and FedEx. If you send me a typical dimension for SV2 Printer, can I send over a shipping quote to any location you choose? P.S. Guarantee it is 15% lower than your current rate."
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Hey Bob, Ok, I am game, let's see what you can get. Typical value of 30x28x22in packet is $25k, approx. 4 units monthly. Typical value of 9x7x4in packet is $1k, approx. 8 units monthly. Please provide \"everything included\" prices (picking up from our dock, delivery to customer's dock, fuel surcharges, fees, insurance, everything) Domestic Shipping to 91711 30x28x22in , 75lbs, 17x17x9in, 15lbs, 9x7x4in, 2lbs, Shipping to 76207 30x28x22in , 75lbs, 17x17x9in, 15lbs, 9x7x4in, 2lbs, Shipping to 07866 30x28x22in , 75lbs, 17x17x9in, 15lbs, 9x7x4in, 2lbs, International Shipping to London (WC2H 9FB) 30x28x22in , 75lbs, 17x17x9in, 15lbs, 9x7x4in, 2lbs, Shipping to Berlin (10999) 30x28x22in , 75lbs, 17x17x9in, 15lbs, 9x7x4in, 2lbs, Shipping to Stockholm (118 52) 30x28x22in , 75lbs, 17x17x9in, 15lbs, 9x7x4in, 2lbs, Best, George"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey George, Appreciate the patience here - I grabbed the first few domestic ones. If you think these are competitive, we'll do a deeper quote for you and sync up on a call to review. Quoted all as shipping from your NY address on your site. 91711 30x28x22in, 75lbs - $63.37 on FedEx 17x17x9in, 15lb - $15.49 on FedEx 9x7x4in, 2lbs - $11.29 on FedEx 76207 30x28x22in, 75lbs - $54.09 17x17x9in, 15lbs - $11.66 9x7x4in, 2lbs -$11.29 07866 30x28x22in, 75lbs - $37 17x17x9in, 15lbs - $11.29 9x7x4in, 2lbs - $11.29 Keep in mind this is just an initial quote - depending on your volume, we may be able to do better than what is quoted above. Worth a conversation? Bob"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Hi Bob, A couple of points: Please provide \"everything included\" prices (picking up from our dock, Do the provided prices include the insurance? You tackled the domestic but skipped international. Do you only do domestic? Best, George"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey George, Adding our founder Steve into the conversation here; he'll be better able to answer your questions. Bob"
+                        }
+                    ]
+                },
+                {
+                    "thread": [
+                        {
+                            "type": "SENT",
+                            "subject": "AuthVia & Capium?",
+                            "email_body": "Hi Chris, I noticed you are offering PPC as a service, but I was wondering if you would find value in white labelling some of your clients like AuthVia & Capium to us to reduce ops burden from your head. We partner with agencies like yours to provide PPC - fully white-labeled. Standard results are at least 4x ROAS. Should I send over more info? Thanks, Peter Delle, Lavie"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "That's a pretty low margin industry. Please send over your white label rates. We typically charge $1000 or 15% of the ad spend, whichever is greater. Thank you, Chris Leach"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey Chris Typically we're managing white labeled campaigns at 5% of ad spend. From an impact standpoint, quick example of our work - Digital Mavericks Media bumped up their conversion rate by 2-3x after having us manage campaigns. They scaled their top promotions to over $500,000 in monthly spend while maintaining KPI targets, and increased ROAS by 93% in the first month. LMK if you want to discuss more Peter"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "We would need to add your team as a user within our MCC account to touch them. Will that work? We have no PPC work right now, but will in January. Do you do paid audits to find ways to improve accounts? Thank you, Chris Leach"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Yes to both the MCC and paid audits. What type of work do you have in the pipe for Jan? Probably best to sync up on a call at this point. Thur or Fri next week? Peter"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "We have been pushing outbound while the economy is slow, but we are going back to inbound marketing, those proposals include PPC management with every tier of service. I charg flat rate, regardless of ad spend, so this might make sense for smaller firms we work with spending around $2k-$5k p/m. Thank you, Chris Leach"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey Chris, Makes sense on my end! We're based mostly out of LA, though my business partner is in Vienna. I'm currently here working on some projects with him, though I'm traveling back from Europe to the west coast early next week, with some flexibility Thursday if you want to sync on it over zoom. Peter"
+                        }
+                    ]
+                },
+                {
+                    "thread": [
+                        {
+                            "type": "SENT",
+                            "subject": "Google Ads ROI for Miles",
+                            "email_body": "Good afternoon, Miles. I observed your company hasn't adopted Google Ads yet. A client of ours had been in business for over three decades and had never engaged in ads. We generated them 95+ Commercial, Package design, and digital printing leads in Q1. One million dollars in pipeline, 65k already secured. Would you be against me sharing more info on the 400% ROAS campaign we designed for them? Thanks, Lexi The Social Rook PS: If this isn't relevant to you, LMK. I can be quite persistent but I'd hate to be barking up the wrong tree"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hi Miles, With just $15,000 in spending, we produced a revenue of $65,000 for a sign and printing services company. Are you experiencing a 400% return on your other marketing investments right now?"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Hey Lexi, Sure, let me know your playbook on how you did that. Thx! Best, Miles Haefner"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Absolutely, here's how we achieved that: 1. **Strategic Keyword Optimization**: We focused on identifying the right keywords that resonated most with potential clients in the signage and graphics industry. Daily monitoring allowed us to refine and adjust these keywords for maximum impact continuously. 2. **Geographic Targeting**: By honing in on specific geographic areas, we ensured that the ads reached the most relevant audience. This not only maximized ad spend efficiency but also drove qualified leads more likely to convert. 3. **Data-Driven Adjustments**: Daily data analysis was crucial. It enabled us to pivot quickly and make precise adjustments to the campaigns based on real-time performance metrics, ensuring we stayed on track to meet and exceed ROI goals. If you're open to discussing this further, I'd be happy to dive deeper into the specifics on a quick call. We can walk through some ideas and see how we can tailor a similar strategy for Signal Signs and Graphics. Let me know if there's a convenient time for you! Lexi"
+                        },
+                        {
+                            "type": "REPLY",
+                            "email_body": "Hey Lexi, Sure - what do you have next week? I'm free Monday after 12p pacific time."
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey Miles, We can do Wed-Fri afternoon if anything works there? I want to loop in Giovani Gonzalez - he's our CEO and has been super close to our sign and printing campaigns. Also, if you could, tell me a bit about what work you've done in the past with ad campaigns - would be super helpful to guide the convo! Lexi"
+                        },
+                        {
+                            "type": "SENT",
+                            "email_body": "Hey Miles, Bumping this one up, want to get something on the books for later on this week to talk google ads? Lexi"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "common_elements": {
+        "length": "concise",
+        "focus": "results_oriented",
+        "flow": "natural_conversational",
+        "progression": "clear_next_steps",
+        "tone": "professional_personal"
+    }
+}

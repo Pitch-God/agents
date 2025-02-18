@@ -8,6 +8,7 @@ import { compilerNode } from "./agent/compiler.js";
 import { input, input2, packagemanReply } from "./examples/reply.js";
 import { toolNode } from "./agent/toolNode.js";
 import { schedulerNode } from "./agent/scheduler.js";
+import { categoriserNode } from "./agent/categoriser.js";
 
 // Finally, create the graph itself.
 const builder = new StateGraph(StateAnnotation)
@@ -16,15 +17,17 @@ const builder = new StateGraph(StateAnnotation)
   .addNode("scheduler", schedulerNode)
   .addNode("scheduleTool", toolNode)
   .addNode("compiler", compilerNode)
+  .addNode("categoriser", categoriserNode)
   .addEdge(START, "manager")
   .addConditionalEdges("manager", managerRoute, [
     "retriever",
     "scheduler",
-    "compiler",
+    "categoriser",
   ])
   .addConditionalEdges("scheduler", shouldSchedule)
+  .addEdge("retriever", "categoriser")
+  .addEdge("categoriser", "compiler")
   .addEdge("scheduleTool", "scheduler")
-  .addEdge("retriever", "compiler")
   .addEdge("compiler", END);
 
 const checkPoint = new MemorySaver();
