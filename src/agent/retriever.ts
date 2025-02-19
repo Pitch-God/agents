@@ -1,7 +1,7 @@
 import { model } from "../utils/model.js";
 import { RunnableSequence } from "@langchain/core/runnables";
-import { input, packagemanReply } from "../examples/reply.js";
-import { packageman } from "../examples/packageman.js";
+import { input, packagemanReply } from "../lib/examples/reply.js";
+import { packageman } from "../lib/examples/packageman.js";
 import { prompt, parser } from "../prompts/retriever.js";
 import { StateAnnotation } from "../utils/state.js";
 import { RunnableConfig } from "@langchain/core/runnables";

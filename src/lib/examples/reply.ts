@@ -108,3 +108,16 @@ export const packagemanReply = [
       "<b5747496-9997-slt41-438f-8409-ce5093e53987-de39ygy@pitchgodboost.com>",
   },
 ];
+
+export const input3 = [
+  {
+    time: "2024-11-26T14:28:26.104Z",
+    type: "SENT",
+    email_body: "Hello, how are you?",
+  },
+  {
+    time: "2024-11-26T14:28:26.104Z",
+    type: "REPLY",
+    email_body: "Hello, I am fine. How are you?",
+  },
+];

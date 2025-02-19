@@ -27,7 +27,17 @@ export const replyPrompt = PromptTemplate.fromTemplate(`
         </reply_style>
         
     
-        
+
+        And use the below information of the company and the individual that you are replying to if present to make the reply more personalised:
+        <company_research>
+        {company_research}
+        </company_research>
+
+        <individual_research>
+        {individual_research}
+        </individual_research>
+
+
         Format your reply according to:
         {format_instructions}
         

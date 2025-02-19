@@ -80,6 +80,18 @@ export const StateAnnotation = Annotation.Root({
   slots: Annotation<Record<string, any>>({
     reducer: (x, y) => y ?? x ?? {},
   }),
+
+  companyResearch: Annotation<Record<string, any>>({
+    reducer: (x, y) => y ?? x ?? {},
+  }),
+
+  individualResearch: Annotation<Record<string, any>>({
+    reducer: (x, y) => y ?? x ?? {},
+  }),
+
+  keywords: Annotation<Record<string, any>>({
+    reducer: (x, y) => y ?? x ?? {},
+  }),
 });
 
 // Create a manager node for the graph
