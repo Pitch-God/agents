@@ -6,8 +6,8 @@ import { modelMini } from "../utils/model.js";
 import { StateAnnotation } from "../utils/state.js";
 import { RunnableSequence } from "@langchain/core/runnables";
 import { RunnableConfig } from "@langchain/core/runnables";
-import { packageman } from "../examples/packageman.js";
-import { input, input2 } from "../examples/reply.js";
+import { packageman } from "../lib/examples/packageman.js";
+import { input, input2 } from "../lib/examples/reply.js";
 
 const chain = RunnableSequence.from([
   categoriserPrompt,

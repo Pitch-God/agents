@@ -1,6 +1,6 @@
 import { model } from "../utils/model.js";
 import { RunnableSequence } from "@langchain/core/runnables";
-import { input2, input, packagemanReply } from "../examples/reply.js";
+import { input2, input, packagemanReply } from "../lib/examples/reply.js";
 import { prompt, parser } from "../prompts/manager.js";
 import { StateAnnotation } from "../utils/state.js";
 import { RunnableConfig } from "@langchain/core/runnables";

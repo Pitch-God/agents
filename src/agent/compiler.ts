@@ -18,7 +18,13 @@ export const compilerNode = async (
   state: typeof StateAnnotation.State,
   _config: RunnableConfig,
 ) => {
-  const { emailThread, slots, isTranslationRequired } = state;
+  const {
+    emailThread,
+    slots,
+    isTranslationRequired,
+    companyResearch,
+    individualResearch,
+  } = state;
   let language = "English";
 
   if (isTranslationRequired.isTranslationRequired) {
@@ -55,6 +61,8 @@ export const compilerNode = async (
     slots: JSON.stringify(slots),
     language: language,
     email_category: emailCategory,
+    company_research: companyResearch,
+    individual_research: individualResearch,
   });
 
   return {
